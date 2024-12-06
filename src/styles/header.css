@@ -1,0 +1,149 @@
+.container {
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    padding-left: 1.875rem;
+    padding-right: 3.125rem;
+    height: 6.25rem;
+    position: relative;
+
+    justify-content: space-between; 
+    
+    
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    & .menu {
+        position: relative;
+        display: flex;
+        gap: .3125rem;
+        left: 1.25rem;
+        justify-content: end;
+       
+    }
+    
+    
+    & .menu .paragrafo a {
+        display: flex;
+        align-items: flex-start;
+        text-decoration: none;
+        font-weight: var(--fw-md);
+        color: var(--color-font);
+        padding: 0 3.125rem;
+        text-transform: uppercase;
+        font-family: var(--ff-sans);
+    
+        /* função para o js*/
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: .2s;
+    }
+
+    & .menu.ativa .paragrafo a {
+        height: fit-content;
+        opacity: 1;
+     }
+    & .menu img {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.875rem;
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+    }
+    
+}
+
+
+@media (min-width: 320px) and (max-width: 1024px){
+
+    .container {
+        width: 100%;
+        padding-left: .625rem;
+        display: flex; 
+        align-items: center; 
+        
+        height: 3.125rem;
+    
+        position: relative;
+    
+        justify-content: space-between;
+    }
+    
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .img-1{
+        width: 6.25rem;
+    } 
+    .img-2 {
+        margin-right: -.625rem;
+    }
+    
+    /* area do menu  */
+    
+    .menu {
+        width: 5px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: -3.125rem;
+       
+    }
+    
+    .menu .paragrafo a {
+        width: 5px;
+        font-size: .75rem;
+        margin-right: .625rem;
+        display: flex;
+        align-items: flex-start;
+        text-decoration: none;
+       
+        color: var(--color-font);
+       
+    
+        /* função para o js*/
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: .2s;
+    }
+    
+    /* Seleção no menu */
+    .paragrafo > .um, .paragrafo > .dois{
+        text-transform: uppercase;
+        font-weight: 600;
+        
+    }
+    
+    /* Função no js */
+    .menu.ativa .paragrafo a {
+        height: fit-content;
+        opacity: 1;
+    }
+    
+    /* Botão do menu */
+    
+    .menu img {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.875rem;
+        display: flex;
+        position: absolute;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
