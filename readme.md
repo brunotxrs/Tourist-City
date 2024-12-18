@@ -79,7 +79,7 @@ Contato:
 
 Email: [elielsonbrunno@gmail.com]
 
-LinkedIn: [Seu Perfil no LinkedIn](https://www.linkedin.com/in/brunotxrs/)
+LinkedIn: [Bruno Teixeira](https://www.linkedin.com/in/brunotxrs/)
 
 Vamos construir juntos uma experiência incrível! 😊
 
